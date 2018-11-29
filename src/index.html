@@ -1,15 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cifrado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <div class="container"> <!-- Inicio container general -->
+    <div class="row" id="hereHover"><!-- Primer row -->
+      <div class="col-12" id="title">
+        <h1 class="open">Cifrado Cesar</h1>
+        <h1 class="showMeOnHover">Jpmyhkv Jlzhy</h1>
+      </div>
+    </div><!-- Fin primer row -->
+    <div class="row"><!-- Segundo row -->
+      <div class="col-3"></div>
+      <div class="col-3">
+        <button type="button" id="btnDefinition">¿Qué es el Cifrado Cesar?</button>
+        <div id="definition">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis leo et justo tincidunt malesuada. Suspendisse vel tellus feugiat, egestas dui et, cursus risus. Phasellus id vestibulum ex, sit amet lobortis lacus. Phasellus tempor consequat elit in maximus. Sed sem metus, euismod ac ex congue, luctus faucibus eros. Fusce vestibulum auctor massa, sed commodo nisl finibus nec. Quisque congue turpis tortor, sed scelerisque erat auctor id. Fusce et magna turpis. Nam vitae accumsan mauris.
+        </div>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btnInstructions">¿Cómo se usa?</button>
+        <div id="instructions">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis leo et justo tincidunt malesuada. Suspendisse vel tellus feugiat, egestas dui et, cursus risus. Phasellus id vestibulum ex, sit amet lobortis lacus. Phasellus tempor consequat elit in maximus. Sed sem metus, euismod ac ex congue, luctus faucibus eros. Fusce vestibulum auctor massa, sed commodo nisl finibus nec. Quisque congue turpis tortor, sed scelerisque erat auctor id. Fusce et magna turpis. Nam vitae accumsan mauris.
+        </div>
+      </div>
+      <div class="col-3"></div>
+    </div><!-- Fin segundo row -->
+    <div class="row"><!-- Tercer row -->
+      <div class="col-12">
+        <textarea rows="6" id="text" placeholder="Ingresa tu texto" required></textarea>
+      </div>         
+    </div><!-- Fin tercer row -->
+    <div class="row"><!-- Cuarto row -->
+      <div class="col-12">
+        Número de posiciones a desplazar: <input type="number" id="offset" placeholder="Ingresa un número"></input>
+      </div>
+    </div><!-- Fin cuarto row -->
+    <div class="row"><!-- Quinto row -->
+      <div class="col-2"></div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <button id="cipher" type="button">Cifrar</button>
+      </div>
+      <div class="col-2">
+        <button type="button">Descifrar</button>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2"></div>
+    </div><!-- Fin quinto row -->
+    <div class="row"><!-- Sexto row -->
+      <div class="col-12">
+        <textarea rows="6" id="output" placeholder="Aquí va tu resultado" required></textarea>
+      </div>
+    </div><!-- Fin sexto row -->
+    <div class="row"><!-- Septimo row -->
+      <div class="col-2"></div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <button type="button" id="limpiar">Limpiar</button>
+      </div>
+      <div class="col-2">
+        <button type="button" id="copiar">Copiar</button>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2"></div>
+    </div><!-- Fin quinto row -->
+  </div>  
+
+    <script src="./index.js"></script>
+    <script src="./cipher.js"></script>
+</body>
 </html>
