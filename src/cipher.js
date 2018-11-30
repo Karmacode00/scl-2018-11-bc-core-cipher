@@ -17,9 +17,16 @@ window.cipher = {
         newNumber = ((letterCipher - 65 + offsetNum) % 26 + 65);
         newLetter = String.fromCharCode(newNumber);
         resultEncode += newLetter
+      }else if(letterCipher >= 97 && letterCipher <= 122){
+        while (offsetNum < 0){
+          offsetNum = offsetNum + 26
+        }
+        newNumber = ((letterCipher - 97 + offsetNum) % 26 + 97);
+        newLetter = String.fromCharCode(newNumber);
+        resultEncode += newLetter
       }
-      return resultEncode;
     }
+    return resultEncode;
   },
   decode: () => {
     /* Acá va tu código */
