@@ -1,7 +1,6 @@
 window.onload = () => {
   document.getElementById('definition').style.display='none';
   document.getElementById('instructions').style.display='none';
-}
 
 // Toggle
 document.getElementById('btnDefinition').addEventListener('click',() => {
@@ -11,7 +10,7 @@ document.getElementById('btnDefinition').addEventListener('click',() => {
   } else {
     definicion.style.display = 'none';
   }
-}),
+});
 
 // Toggle
 document.getElementById('btnInstructions').addEventListener('click',() => {
@@ -21,7 +20,7 @@ document.getElementById('btnInstructions').addEventListener('click',() => {
   } else {
     instrucciones.style.display = 'none';
   }
-}),
+});
 
 // Evento click limpiar
 document.getElementById('limpiar').addEventListener('click', () => {
@@ -43,9 +42,10 @@ document.getElementById('copiar').addEventListener('click', () => {
 });
 
   // Evento click texto a encode
-  document.getElementById('cipher').addEventListener('click', () => {
-    let str = document.getElementById('text').value;
-    let num = document.getElementById('offset').value;
-    const result = window.cipher.encode(num, str);
-    document.getElementById('output').value = result;
+  document.getElementById('btnEncode').addEventListener('click', () => {
+    let textEncode = document.getElementById('text').value;
+    let offsetNum = document.getElementById('offset').value;
+    const resultEncode = window.cipher.encode(textEncode, offsetNum);
+    document.getElementById('output').value = resultEncode;
   });
+}

@@ -1,29 +1,29 @@
 window.cipher = {
-  encode: (str, num) => {
-    // Comienza función encode
-    num = parseInt(num);
-    let result = '';
-    // Se moverá de a una posición a lo largo de lapalabra entregada
-    for (let i = 0; i < str.length; i++) {
-      let char = str[i];
-      // let charCode = char.charCodeAt(i);
-      if (char.match(/[A-Z]/i)) { // Si lo que ingresamos es letra 
-        let charCode = str.charCodeAt(i);
-        // AsCii
-        // Mayúsculas 
-        if ((charCode >= 65) && (charCode <= 90)) {
-          char = String.fromCharCode(((charCode - 65 + parseInt(num)) % 26) + 65);
+  encode: (textEncode, offsetNum) => {
+    offsetNum = parseInt(offsetNum);
+    let resultEncode = '';
+    let letterCipher = '';
+    let newLetter = '';
+    let newNumber = '';
+    for (let i = 0; i < textEncode.length; i++) {
+      letterCipher = textEncode.charCodeAt(i);
+      if (letterCipher === 32) { 
+        newLetter = String.fromCharCode(letterCipher);
+        resultEncode += newLetter
+      } else if (letterCipher >= 65 && letterCipher <= 90) {
+        while (offsetNum < 0) {
+          offsetNum = offsetNum + 26
         }
-        // Minusculas 
-        else if ((charCode >= 97) && (charCode <= 122)) {
-          char = String.fromCharCode(((charCode - 97 + parseInt(num)) % 26) + 97);
-        }
+        newNumber = ((letterCipher - 65 + offsetNum) % 26 + 65);
+        newLetter = String.fromCharCode(newNumber);
+        resultEncode += newLetter
       }
-      result += char;
+      return resultEncode;
     }
-    return result;
   },
   decode: () => {
     /* Acá va tu código */
   }
 };
+
+
