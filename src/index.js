@@ -43,7 +43,7 @@ window.onload = () => {
   // Evento click texto a encode
   document.getElementById('btnEncode').addEventListener('click', () => {
     let textEncode = document.getElementById('text').value;
-    let offsetNum = document.getElementById('offset').value;
+    let offsetNum = parseInt(document.getElementById('offset').value);
     const resultEncode = window.cipher.encode(textEncode, offsetNum);
     document.getElementById('output').value = resultEncode;
   });
@@ -51,7 +51,7 @@ window.onload = () => {
   // Evento click texto a decode
   document.getElementById('btnDecode').addEventListener('click', () => {
     let textDecode = document.getElementById('text').value;
-    let offsetNumDec = document.getElementById('offset').value;
+    let offsetNumDec = parseInt(document.getElementById('offset').value);
     const resultDecode = window.cipher.decode(textDecode, offsetNumDec);
     document.getElementById('output').value = resultDecode;
   });
