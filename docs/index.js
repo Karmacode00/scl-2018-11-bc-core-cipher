@@ -31,14 +31,13 @@ window.onload = () => {
 
   // Evento click copiar
   document.getElementById('copiar').addEventListener('click', () => {
-    /* Get the text field */
-    let copyText = document.getElementById('output');
-    /* Select the text field */
-    copyText.select();
-    /* Copy the text inside the text field */
-    document.execCommand('copy');
-    /* Alert the copied text */
-    alert('Copiaste este mensaje: ' + copyText.value);
+  let copyText = document.getElementById('output');
+  /* Select the text field */
+  copyText.select();
+  /* Copy the text inside the text field */
+  document.execCommand('copy');
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
   });
 
   // Evento click texto a encode
