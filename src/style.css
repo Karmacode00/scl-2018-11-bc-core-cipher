@@ -1,11 +1,11 @@
 body{
     font-family: 'Open Sans', sans-serif;
     text-align-last: center;
-    background-image: url('./img/wood.jpg');
+    background-image: url('./img/trees.jpg');
 }
 
 h1{
-    font-size: 60px;
+    font-size: 10vw;
     font-family: 'Bungee';
     color: rgba(0, 0, 0, 0.5);
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -76,3 +76,10 @@ textarea {
 #hereHover:hover {
     text-align: center;
 }
+
+@media screen and (max-width:800px) {
+    #background, #instructions, #definition {
+      width:100%; 
+      font-size: 80%;
+    }
+  }
