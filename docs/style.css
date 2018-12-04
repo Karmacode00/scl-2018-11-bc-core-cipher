@@ -1,0 +1,78 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align-last: center;
+    background-image: url('./img/wood.jpg');
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Bungee';
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#instructions, #definition{
+    background-color: rgb(86, 82, 78, 0.8);
+    border-radius: 6px;
+    color: white;
+}
+#background{
+    color: white; 
+}
+
+.block{
+    display: flex;
+    margin: 5%;
+    justify-content: flex-start
+}
+
+#posicion{
+    margin: 5%;
+    align-items: center;
+    align-content: center;
+}
+#instructions, #definition {
+    text-align: justify;
+}
+
+button{
+    display: inline-block;
+    border-radius: 6px; 
+    padding: 2%;
+    background-color: rgb(86, 82, 78, 0.5);
+    font-size: 16px;
+    color: aliceblue;
+}
+
+#offset{
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+}
+
+textarea {
+    resize: none;
+    width: 60%;
+    height: 80%;
+    font-size: 18px;
+    border-radius: 6px; 
+}
+
+.showMeOnHover { 
+    display: none; 
+}
+
+#hereHover:hover .showMeOnHover {
+    display: block;
+}
+
+#hereHover:hover .open {
+    display: none;
+}
+
+#hereHover:hover {
+    text-align: center;
+}
