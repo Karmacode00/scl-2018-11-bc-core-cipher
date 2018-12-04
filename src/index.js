@@ -49,11 +49,11 @@ window.onload = () => {
     document.getElementById('output').value = resultEncode;
   });
 
-  // Evento click texto a encode
+  // Evento click texto a decode
   document.getElementById('btnDecode').addEventListener('click', () => {
     let textDecode = document.getElementById('text').value;
-    let offsetNum = document.getElementById('offset').value;
-    const resultDecode = window.cipher.encode(textDecode, offsetNum);
+    let offsetNumDec = document.getElementById('offset').value;
+    const resultDecode = window.cipher.decode(textDecode, offsetNumDec);
     document.getElementById('output').value = resultDecode;
   });
 }
