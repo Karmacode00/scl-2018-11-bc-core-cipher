@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="shortcut icon" href="./img/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Bungee" rel="stylesheet">
 </head>
 <body>
   <div class="container"> <!-- Inicio container general -->
@@ -21,7 +21,7 @@
     <div class="row"><!-- Segundo row -->
       <div class="col-3"></div>
       <div class="col-3">
-        <button type="button" id="btnDefinition">¿Qué es el Cifrado Cesar?</button>
+        <button type="button" id="btnDefinition">¿Qué es esto?</button>
         <div id="definition">
           Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. <br>Puedes leer más aquí: <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Cifrado Cesar</a>
         </div>
@@ -29,18 +29,18 @@
       <div class="col-3">
         <button type="button" id="btnInstructions">¿Cómo se usa?</button>
         <div id="instructions">
-           Ingresa el texto que quieres cifrar o descifrar, luego selecciona el número de posiciones a desplazar y clickea el botón y listo!
+           Ingresa el texto que quieres cifrar o descifrar, luego selecciona el número de posiciones a desplazar, clickea el botón y listo!
         </div>
       </div>
       <div class="col-3"></div>
     </div><!-- Fin segundo row -->
     <div class="row"><!-- Tercer row -->
       <div class="col-12">
-        <textarea rows="6" id="text" placeholder="Ingresa tu texto" required></textarea>
+        <textarea rows="6" id="text" placeholder="Ingresa tu texto" required autofocus></textarea>
       </div>         
     </div><!-- Fin tercer row -->
     <div class="row"><!-- Cuarto row -->
-      <div class="col-12">
+      <div class="col-12" id="background">
         <p id="background">Número de posiciones a desplazar: <input type="number" id="offset" placeholder="Ingresa un número"></p>
       </div>
     </div><!-- Fin cuarto row -->
