@@ -1,6 +1,14 @@
 window.onload = () => {
-  document.getElementById('definition').style.display = 'none';
+  document.getElementById('screenTwo').style.display = 'none';
   document.getElementById('instructions').style.display = 'none';
+  document.getElementById('definition').style.display = 'none';
+
+  setTimeout(screenTwo, 3000);
+
+  function screenTwo() {
+    document.getElementById('screenOne').style.display="none";
+    document.getElementById('screenTwo').style.display="block";
+   }
 
   // Toggle
   document.getElementById('btnDefinition').addEventListener('click', () => {
