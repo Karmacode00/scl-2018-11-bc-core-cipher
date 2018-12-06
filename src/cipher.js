@@ -20,6 +20,13 @@ window.cipher = {
         newNumber = ((letterCipher - 97 + offsetNum) % 26 + 97);
         newLetter = String.fromCharCode(newNumber);
         resultEncode += newLetter
+      }else if (letterCipher >= 48 && letterCipher <= 57) {
+        while (offsetNum < 0){
+          offsetNum = offsetNum + 10
+        }
+        newNumber = ((letterCipher - 48 + offsetNum) % 10 + 48);
+        newLetter = String.fromCharCode(newNumber);
+        resultEncode += newLetter
       }else{
         newLetter = String.fromCharCode(letterCipher);
         resultEncode += newLetter
@@ -34,6 +41,7 @@ window.cipher = {
     let newNumber = '';
     let decodeUpper = '';
     let decodeLower = '';
+    let decodeNum = '';
     for(let i=0; i<textDecode.length; i++){
       letterDecode = textDecode.charCodeAt(i);
       if(letterDecode >= 65 && letterDecode <= 90){
@@ -56,6 +64,17 @@ window.cipher = {
           decodeLower = decodeLower + 26
         }
         newNumber = decodeLower % 26 + 97;
+        newLetter = String.fromCharCode(newNumber);
+        resultDecode += newLetter
+      }else if(letterDecode >= 48 && letterDecode <= 57){
+        while (offsetNumDec < 0){
+          offsetNumDec = offsetNumDec + 10
+        }
+        decodeNum = (letterDecode - 48 - offsetNumDec)
+        while (decodeNum < 0){
+          decodeNum = decodeNum + 10
+        }
+        newNumber = decodeNum % 10 + 48;
         newLetter = String.fromCharCode(newNumber);
         resultDecode += newLetter
       }else{
