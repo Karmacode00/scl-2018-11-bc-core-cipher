@@ -1,7 +1,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     text-align-last: center;
-    background-image: url('./img/trees.jpg');
+    background-image: url('./img/darkwood.jpg');
 }
 
 h1{
@@ -95,19 +95,22 @@ textarea {
 }
   
 .loader1 {
-    width: 70px;
-    height: 70px;
-    border-top: 5px solid rgb(230, 127, 9);
-    border-bottom: 5px solid rgb(230, 127, 9);
+    width: 60px;
+    height: 60px;
+    border-top: 5px solid rgb(86, 82, 78);
+    border-bottom: 5px solid rgb(86, 82, 78);
+    top: 5px;
+    left: 5px;
     animation: clockwisespin 2s linear 3;
 }
   
 .loader2 {
     width: 60px;
     height: 60px;
-    border-left: 5px solid yellow;
-    border-right: 5px solid yellow;
-    top: 5px; left: 5px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    top: 5px;
+    left: 5px;
     animation: anticlockwisespin 2s linear 3;
 }
   
