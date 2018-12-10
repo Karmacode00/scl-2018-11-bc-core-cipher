@@ -14,7 +14,7 @@ Como personas que viven en un mundo conectado y de fácil acceso a toda la infor
 
 **Cómo utilizarlo**
 
-Ingresando a este [link](https://github.com/Karmacode00/scl-2018-11-bc-core-cipher)
+Ingresando a este [link](https://karmacode00.github.io/scl-2018-11-bc-core-cipher/)
 
 Encontrarás breves instrucciones y enlace a más información.
 
