@@ -26,7 +26,7 @@ El comienzo del desarrollo fue  partir de un sketch:
 
 El cual fue modificado desde el diseño inicial, al pasar distintos sprints.
 
-La planificación está disponible en Trello aquí -link pendiente-.
+La planificación está disponible en Trello aquí [Tablero](https://trello.com/b/QZjHPSmU).
 
 **Boilerplate**
 
