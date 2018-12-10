@@ -22,7 +22,7 @@ Encontrarás breves instrucciones y enlace a más información.
 
 El comienzo del desarrollo fue  partir de un sketch:
 
-!(sketch.jpg)
+!(https://raw.githubusercontent.com/Karmacode00/scl-2018-11-bc-core-cipher/master/src/img/sketch.jpg)
 
 El cual fue modificado desde el diseño inicial, al pasar distintos sprints.
 
