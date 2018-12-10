@@ -22,7 +22,7 @@ Encontrarás breves instrucciones y enlace a más información.
 
 El comienzo del desarrollo fue  partir de un sketch:
 
-!(./sketch.jpg)
+!(sketch.jpg)
 
 El cual fue modificado desde el diseño inicial, al pasar distintos sprints.
 
